@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ImageToWebPConverter.Core\ImageToWebPConverter.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ImageToWebPConverter.Core\**\*.cs" />
+    <Compile Remove="ImageToWebPConverter.UI\**\*.cs" />
+    <Compile Remove="ImageToWebPConverter.Tests\**\*.cs" />
+    <EmbeddedResource Remove="ImageToWebPConverter.UI\**\*" />
+    <None Remove="ImageToWebPConverter.UI\**\*" />
+    <None Remove="ImageToWebPConverter.Tests\**\*" />
+    <Page Remove="ImageToWebPConverter.UI\**\*.xaml" />
+  </ItemGroup>
+
+</Project>
