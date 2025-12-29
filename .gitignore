@@ -6,6 +6,7 @@ x86/
 [Bb]in/
 [Oo]bj/
 publish/
+release/
 
 # Visual Studio
 .vs/
